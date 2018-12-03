@@ -16,8 +16,10 @@ Use this in favour of the [Rift wiki's](https://github.com/DimensionalDevelopmen
 ```groovy
 buildscript {
 	repositories {
+		mavenCentral()
 		maven { url 'https://www.jitpack.io' }
 		maven { url 'https://files.minecraftforge.net/maven' }
+		maven { url 'https://www.dimdev.org/maven/' }
 	}
 	dependencies {
 		classpath 'com.github.Chocohead:ForgeGradle:moderniser-SNAPSHOT'
@@ -35,9 +37,10 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 	maven { url 'https://www.jitpack.io' }
 	maven { url 'http://repo.strezz.org/artifactory/list/Strezz-Central' }
+	maven { url 'https://www.dimdev.org/maven/' }
 }
 
 dependencies {
