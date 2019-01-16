@@ -30,12 +30,9 @@ public class MixinGuiChat {
 
     public Object gotServerSideSuggestions(CompletableFuture<Suggestions> pendingSuggestions) {
         Suggestions server=pendingSuggestions.join();
-//        System.out.println("gSSS called, server is " + server);
         Suggestions local=LocalCommandManager.getSuggestions(inputField.getText());
-//        System.out.println("local is " + local);
-//        System.out.println("---------------------------");
-        
-        if (local.isEmpty()) {
+
+        if (local==null || local.isEmpty()) {
             return server;
         }
         

@@ -45,6 +45,9 @@ public class LocalCommandManager {
     }
     
     private Suggestions getSuggestionsFor(String command) {
+        if (!command.startsWith("/")) {
+		    return null;
+        }
         // Don't just pass command; pass a stringreader that skips over the '/',
         // or Suggestions.range won't match the server version.
         StringReader reader=new StringReader(command);
