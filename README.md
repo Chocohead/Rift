@@ -8,7 +8,7 @@ This fork contains the Minecraft 1.13.1 port (in the `newerer` branch) and the M
 If you have any problems or find any incompatibilities using this please do report them [here](https://github.com/Chocohead/Rift/issues). Previous problems with Optifine and water/connected textures appear to have been fixed so there is nothing known to cause trouble at the moment.
 
 ### Using the Minecraft Launcher
-The current version can be downloaded from [**here**](https://jitpack.io/com/github/Chocohead/Rift/jitpack-SNAPSHOT/Rift-jitpack-SNAPSHOT.jar) and installed just like the previous versions of Rift. Mods designed for 1.13 currently aren't supported but might be in future.
+The current version can be downloaded from [**here**](https://jitpack.io/com/github/Chocohead/Rift/v1.0.4-77/Rift-v1.0.4-77.jar) and installed just like the previous versions of Rift. Mods designed for 1.13 currently aren't supported but might be in future.
 
 ### Using MultiMC
 *TODO*
