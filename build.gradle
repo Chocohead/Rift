@@ -55,6 +55,7 @@ minecraft {
 
     replace "@VERSION@", project.version
     replaceIn "org/dimdev/riftloader/Main.java"
+    replaceIn "org/dimdev/rift/mixin/core/client/MixinMainMenu.java"
 }
 
 mixin {
@@ -81,6 +82,10 @@ processResources {
 		def things = ['version': project.version, 'build': process.exitValue() ? 'jitpack-SNAPSHOT' : "${process.text.trim()}"]
 
         expand things
+    }
+
+    filesMatching('riftmod.json') {
+        expand 'version': project.version
     }
 
     // Re-run this task when these change
