@@ -45,4 +45,5 @@ public class ModInfo {
     public String name;
     public List<String> authors = new ArrayList<>();
     public List<Listener> listeners = new ArrayList<>();
+    public List<String> mixins = new ArrayList<>();
 }
