@@ -41,6 +41,8 @@
     "MixinItemTool"
   ],
   "client": [
+    "client.MixinGuiChat",
+    "client.MixinLocalCommand",
     "client.MixinMinecraft",
     "client.MixinModelBakery",
     "client.MixinNetHandlerPlayClient",
@@ -48,6 +50,7 @@
     "client.MixinRenderManager",
     "client.MixinEntityPlayerSP",
     "client.MixinGameSettings",
-    "client.MixinGuiIngame"
+    "client.MixinGuiIngame",
+    "client.MixinKeyBinding"
   ]
 }
